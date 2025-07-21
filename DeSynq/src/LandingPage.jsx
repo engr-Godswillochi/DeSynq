@@ -217,9 +217,66 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
       </section>
 
       {/* Footer */}
-      <footer className="py-12 border-t border-purple-400/30 bg-black text-gray-400 text-center text-sm">
-        © 2025 DeSynq. All rights reserved.
-      </footer>
+      <footer className="bg-black border-t border-purple-400/30 py-12">
+  <div className="max-w-7xl mx-auto px-4 lg:px-6">
+    <div className="grid md:grid-cols-4 gap-8">
+
+      {/* Brand Section */}
+      <div>
+        <div className="flex items-center space-x-2 mb-4">
+          <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center shadow-lg shadow-purple-500/50">
+            <img src="/1.png" alt="DeSynq Logo" className="w-5 h-5 object-contain" />
+          </div>
+          <span className="text-xl font-bold text-white">DeSynq</span>
+        </div>
+        <p className="text-gray-400 text-sm">
+          Decentralized coordination, powered by Internet Computer Protocol (ICP).
+        </p>
+      </div>
+
+      {/* Product Links */}
+      <div>
+        <h3 className="text-white font-semibold mb-4">Product</h3>
+        <ul className="space-y-2 text-sm">
+          <li><a href="#how-it-works" className="text-gray-400 hover:text-purple-400 transition-colors">How it Works</a></li>
+          <li><a href="#features" className="text-gray-400 hover:text-purple-400 transition-colors">Features</a></li>
+          <li><a href="#solutions" className="text-gray-400 hover:text-purple-400 transition-colors">Solutions</a></li>
+        </ul>
+      </div>
+
+      {/* Company Links */}
+      <div>
+        <h3 className="text-white font-semibold mb-4">Company</h3>
+        <ul className="space-y-2 text-sm">
+          <li><a href="#about" className="text-gray-400 hover:text-purple-400 transition-colors">About</a></li>
+          <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">Blog</a></li>
+          <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">Careers</a></li>
+          <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      {/* Resources Links */}
+      <div>
+        <h3 className="text-white font-semibold mb-4">Resources</h3>
+        <ul className="space-y-2 text-sm">
+          <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">Docs</a></li>
+          <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">API Reference</a></li>
+          <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">Community</a></li>
+        </ul>
+      </div>
+    </div>
+
+    {/* Bottom Bar */}
+    <div className="border-t border-purple-500/20 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
+      <p className="text-gray-400 text-sm">© 2025 DeSynq. All rights reserved.</p>
+      <div className="flex space-x-6 mt-4 sm:mt-0">
+        <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors text-sm">Privacy Policy</a>
+        <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors text-sm">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
     </div>
   );
 }
