@@ -47,9 +47,10 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
       <header className="sticky top-0 z-50 border-b border-purple-400/30 bg-black/90 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center shadow-lg">
-              <Shield className="w-5 h-5 text-white" />
+          <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center overflow-hidden">
+            <img src="/1.png" alt="DeSynq Logo" className="w-6 h-6 object-contain" />
             </div>
+
             <span className="text-xl font-bold text-white">DeSynq</span>
           </div>
           <div className="hidden md:flex space-x-6 text-gray-300">
@@ -58,8 +59,8 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
             <a href="#solutions" className="hover:text-purple-400">Solutions</a>
           </div>
           <div className="hidden md:flex space-x-4">
-          <Button variant="outline">Sign In</Button>
-          <Button>Get Started</Button>
+          <a href=""><Button variant="outline">Sign In</Button></a>
+          <a href=""><Button>Get Started</Button></a>
         </div>
 
           <button
@@ -76,8 +77,8 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
                     <a href="#about" className="block text-gray-300 hover:text-purple-400">About</a>
                     <a href="#features" className="block text-gray-300 hover:text-purple-400">Features</a>
                     <a href="#solutions" className="block text-gray-300 hover:text-purple-400">Solutions</a>
-                    <Button variant="outline" className = "w-full">SignIn</Button>
-                    <Button className="w-full">Get Started</Button>
+                    <a href=""><Button variant="outline" className = "w-full">SignIn</Button></a>
+                    <a href=""><Button className="w-full">Get Started</Button></a>
                 </div>
                 )}
       </header>
@@ -99,8 +100,8 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
             Automate decisions, manage members, and coordinate treasury ops without sacrificing decentralization.
           </p>
           <div className="mt-10 flex justify-center space-x-4 flex-wrap">
-            <Button>Try Free</Button>
-            <Button variant="outline">Watch Demo</Button>
+           <a href=""><Button>Try Free</Button></a>
+            <a href=""><Button variant="outline">Watch Demo</Button></a>
           </div>
           <div className="mt-16 mx-auto max-w-xl">
             <img
@@ -146,7 +147,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
         </div>
 
         <div className="mt-12 text-center">
-        <Button><a href="https://wiki.internetcomputer.org/wiki/Main_Page">Learn More About ICP</a></Button>
+        <a href="https://wiki.internetcomputer.org/wiki/Main_Page"><Button>Learn More About ICP</Button></a>
         </div>
     </div>
     </section>
