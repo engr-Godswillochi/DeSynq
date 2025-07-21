@@ -104,7 +104,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
           </div>
           <div className="mt-16 mx-auto max-w-xl">
             <img
-              src="/public/assets/dashboard.jpeg"
+              src="/assets/dashboard.jpeg"
               alt="Dashboard Mockup"
               className="rounded-xl border border-purple-500/30 shadow-xl"
             />
@@ -207,7 +207,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
           </div>
           <div>
             <img
-              src="/public/assets/solutions.jpeg"
+              src="/assets/solutions.jpeg"
               alt="Solutions Screenshot"
               className="rounded-xl shadow-xl border border-purple-500/30"
             />
