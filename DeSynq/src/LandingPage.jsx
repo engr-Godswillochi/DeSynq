@@ -90,6 +90,46 @@ function LandingPage() {
         </div>
       </section>
 
+        <section id="how-it-works" className="py-20 bg-black text-white border-t border-purple-400/20">
+        <div className="max-w-7xl mx-auto px-4">
+            <div className="text-center mb-12">
+            <Badge>How It Works</Badge>
+            <h2 className="mt-4 text-4xl font-bold">
+                Powered by{" "}
+                <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                ICP Technology
+                </span>
+        </h2>
+        <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
+            DeSynq operates entirely on-chain, utilizing Internet Computer Protocol (ICP) smart contracts for scalable, decentralized backend infrastructure. No centralized servers. Just pure Web3.
+        </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 text-left">
+        <Card 
+            icon={Globe} 
+            title="Canister Smart Contracts" 
+            description="Your data and processes live in canisters on ICP, ensuring full decentralization and near-infinite scalability."
+        />
+        <Card 
+            icon={Lock} 
+            title="End-to-End Encryption" 
+            description="ICP’s cryptographic guarantees power secure data handling, keeping team activity and treasury ops private."
+        />
+        <Card 
+            icon={Zap} 
+            title="On-Chain Workflows" 
+            description="DeSynq automates DAO tasks using smart contract triggers hosted natively on ICP, reducing reliance on external infrastructure."
+        />
+        </div>
+
+        <div className="mt-12 text-center">
+        <Button>Learn More About ICP</Button>
+        </div>
+    </div>
+    </section>
+
+
       {/* Features */}
       <section id="features" className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4">
