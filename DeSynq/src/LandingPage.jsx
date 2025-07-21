@@ -146,7 +146,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
         </div>
 
         <div className="mt-12 text-center">
-        <Button>Learn More About ICP</Button>
+        <Button><a href="https://wiki.internetcomputer.org/wiki/Main_Page">Learn More About ICP</a></Button>
         </div>
     </div>
     </section>
