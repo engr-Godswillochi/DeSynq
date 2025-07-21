@@ -1,6 +1,7 @@
 
 import React from "react";
-import { Shield, Users, Zap, Globe, Lock, TrendingUp, CheckCircle, ArrowRight } from "lucide-react";
+import { useState } from "react";
+import { Shield, Users, Zap, Globe, Lock, TrendingUp, CheckCircle, ArrowRight, Menu } from "lucide-react";
 
 function Button({ children, variant = "solid", className = "", ...props }) {
   const baseClass =
@@ -36,6 +37,9 @@ function Card({ icon: Icon, title, description }) {
 }
 
 function LandingPage() {
+const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    
   return (
     <div className="bg-black text-white min-h-screen font-sans">
       
@@ -49,19 +53,37 @@ function LandingPage() {
             <span className="text-xl font-bold text-white">DeSynq</span>
           </div>
           <div className="hidden md:flex space-x-6 text-gray-300">
-            <a href="#about" className="hover:text-purple-400">About</a>
+            <a href="#how-it-works" className="hover:text-purple-400">How It Works</a>
             <a href="#features" className="hover:text-purple-400">Features</a>
             <a href="#solutions" className="hover:text-purple-400">Solutions</a>
           </div>
-          <div className="flex space-x-4">
-            <Button variant="outline">Sign In</Button>
-            <Button className="hidden md:inline-flex">Get Started</Button>
-          </div>
+          <div className="hidden md:flex space-x-4">
+          <Button variant="outline">Sign In</Button>
+          <Button>Get Started</Button>
         </div>
+
+          <button
+                className="md:hidden p-2 rounded-lg bg-purple-600 hover:bg-purple-700"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                >
+                <Menu className="w-5 h-5 text-white" />
+            </button>
+            
+
+        </div>
+        {mobileMenuOpen && (
+                <div className="md:hidden bg-black border-t border-purple-500/20 px-4 py-4 space-y-4 text-center">
+                    <a href="#about" className="block text-gray-300 hover:text-purple-400">About</a>
+                    <a href="#features" className="block text-gray-300 hover:text-purple-400">Features</a>
+                    <a href="#solutions" className="block text-gray-300 hover:text-purple-400">Solutions</a>
+                    <Button variant="outline" className = "w-full">SignIn</Button>
+                    <Button className="w-full">Get Started</Button>
+                </div>
+                )}
       </header>
 
       {/* Hero */}
-      <section className="relative py-24 text-center" id="about">
+      <section className="relative py-24 text-center">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-600/30 via-pink-500/20 to-purple-800/40"></div>
         <div className="absolute inset-0 bg-black/70"></div>
         <div className="relative max-w-4xl mx-auto px-4 z-10">
