@@ -233,9 +233,10 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
           Decentralized coordination, powered by Internet Computer Protocol (ICP).
         </p>
       </div>
-
-      {/* Product Links */}
-      <div>
+        <div className = "flex flex-wrap gap-8 md:contents">
+            
+        {/* Product Links */}
+      <div className = "flex-1">
         <h3 className="text-white font-semibold mb-4">Product</h3>
         <ul className="space-y-2 text-sm">
           <li><a href="#how-it-works" className="text-gray-400 hover:text-purple-400 transition-colors">How it Works</a></li>
@@ -245,7 +246,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
       </div>
 
       {/* Company Links */}
-      <div>
+      <div className = "flex-1">
         <h3 className="text-white font-semibold mb-4">Company</h3>
         <ul className="space-y-2 text-sm">
           <li><a href="#about" className="text-gray-400 hover:text-purple-400 transition-colors">About</a></li>
@@ -256,7 +257,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
       </div>
 
       {/* Resources Links */}
-      <div>
+      <div className = "flex-1">
         <h3 className="text-white font-semibold mb-4">Resources</h3>
         <ul className="space-y-2 text-sm">
           <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">Docs</a></li>
@@ -264,7 +265,9 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
           <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">Community</a></li>
         </ul>
       </div>
+        </div>
     </div>
+      
 
     {/* Bottom Bar */}
     <div className="border-t border-purple-500/20 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
