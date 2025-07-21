@@ -24,6 +24,7 @@ function Badge({ children }) {
   );
 }
 
+
 function Card({ icon: Icon, title, description }) {
   return (
     <div className="p-6 bg-gradient-to-br from-black via-purple-900/40 to-black border border-purple-400/40 hover:border-pink-400/60 transition-all duration-300 rounded-lg hover:shadow-lg hover:shadow-purple-500/20">
@@ -85,7 +86,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
       {/* Hero */}
       <section className="relative py-24 text-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-600/30 via-pink-500/20 to-purple-800/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-purple-900/100 to-black"></div>
         <div className="absolute inset-0 bg-black/70"></div>
         <div className="relative max-w-4xl mx-auto px-4 z-10">
           <Badge>Built for DAOs, NFT Guilds & Web3 Teams</Badge>
@@ -113,7 +114,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
         </div>
       </section>
 
-        <section id="how-it-works" className="py-20 bg-black text-white border-t border-purple-400/20">
+        <section id="how-it-works" className="py-20 bg-gradient-to-b from-black via-purple-900/60 to-black">
         <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
             <Badge>How It Works</Badge>
@@ -152,10 +153,9 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     </div>
     </section>
 
-
       {/* Features */}
-      <section id="features" className="py-20 bg-black">
-        <div className="max-w-7xl mx-auto px-4">
+      <section id="features" className="py-20 bg-gradient-to-b from-black via-purple-900/30 to-black">
+        <div className="container mx-auto px-4 lg:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold">
               Powerful Features for{" "}
@@ -179,7 +179,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
       </section>
 
       {/* Solutions */}
-      <section id="solutions" className="py-20 bg-gradient-to-r from-black via-purple-950/20 to-black">
+      <section id="solutions" className="py-20 bg-gradient-to-b from-black via-purple-900/30 to-black">
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <Badge>Solutions</Badge>
